@@ -1,6 +1,6 @@
 {
   "name": "deadname-fixer",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A replugged plugin to fix mentions of your deadname!",
   "engines": {
     "node": ">=18.0.0",
