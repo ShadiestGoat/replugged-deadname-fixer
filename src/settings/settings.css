@@ -1,0 +1,30 @@
+.shady-summary {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  cursor: pointer;
+}
+.shady-summary * {
+  user-select: none !important;
+}
+
+.shady-summary:before {
+  color: var(--text-normal);
+  content: "►";
+}
+.shady-details[open] .shady-summary:before {
+  content: "▼";
+}
+
+.shady-details > *:not(:last-child) {
+  margin-bottom: 2vh;
+}
+
+.deadname-wrapper {
+  margin-top: 2vh;
+}
+
+.option-text-inp {
+  margin-top: 2vh;
+}

@@ -1,0 +1,20 @@
+{
+  "id": "eu.shadygoat.DeadnameFixer",
+  "name": "DeadnameFixer",
+  "description": "Fix any mention of your deadname(s)",
+  "author": {
+    "name": "Lucy Dryaeva",
+    "discordID": "376079696489742338",
+    "github": "ShadiestGoat"
+  },
+  "version": "1.0.0",
+  "updater": {
+    "type": "github",
+    "id": "ShadiestGoat/replugged-deadname-fixer"
+  },
+  "license": "MIT",
+  "type": "replugged-plugin",
+  "renderer": "src/index.ts",
+  "source": "https://github.com/ShadiestGoat/replugged-deadname-fixer",
+  "image": ["https://cdn.discordapp.com/attachments/735886276070342696/1164412779931897866/QznwHsj.png"]
+}
