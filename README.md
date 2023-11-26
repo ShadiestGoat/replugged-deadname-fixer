@@ -10,3 +10,5 @@ Features:
 - Case preservation
 - Optionally view original content
 - Markdown-based solution, improved stability?
+
+![](cover.png)
