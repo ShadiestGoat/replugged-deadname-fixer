@@ -17,6 +17,6 @@
   "renderer": "src/index.ts",
   "source": "https://github.com/ShadiestGoat/replugged-deadname-fixer",
   "image": [
-    "https://i.imgur.com/IHUBxXD.png"
+    "https://raw.githubusercontent.com/ShadiestGoat/replugged-deadname-fixer/main/cover.png"
   ]
 }
