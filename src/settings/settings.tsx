@@ -7,9 +7,7 @@ import "./settings.css";
 export function Settings(): React.ReactElement {
   return (
     <Flex style={{ gap: "2vh", flexDirection: "column" }}>
-      <Notice messageType={Notice.Types.INFO}>
-        All names are case-insensitive!
-      </Notice>
+      <Notice messageType={Notice.Types.INFO}>All names are case-insensitive!</Notice>
 
       <SwitchItem
         {...util.useSetting(cfg, "preserveCasing", defaultSettings.preserveCasing)}
@@ -23,7 +21,10 @@ export function Settings(): React.ReactElement {
       </SwitchItem>
 
       <Flex direction={Flex.Direction.VERTICAL}>
-        <TitleSub title="Your Name" explanation="This is your chosen name. If Preserve Casing is enabled, this is case insensitive." />
+        <TitleSub
+          title="Your Name"
+          explanation="This is your chosen name. If Preserve Casing is enabled, this is case insensitive."
+        />
         <TextInput
           className="option-text-inp"
           placeholder="Real Name"
@@ -79,11 +80,11 @@ export function DeadnameOpt(): React.ReactElement {
 
   return (
     <div>
-      <TitleSub title="Your Deadnames" explanation="Please write the name(s) you were given at birth here. These will be replaced. They are case-insensitive" />
-      <Flex
-        className="deadname-wrapper"
-        direction={Flex.Direction.VERTICAL}
-        style={{ gap: "2vh" }}>
+      <TitleSub
+        title="Your Deadnames"
+        explanation="Please write the name(s) you were given at birth here. These will be replaced. They are case-insensitive"
+      />
+      <Flex className="deadname-wrapper" direction={Flex.Direction.VERTICAL} style={{ gap: "2vh" }}>
         {value.map((v, i) => {
           return (
             <Flex direction={Flex.Direction.HORIZONTAL} style={{ gap: "2vw" }}>
