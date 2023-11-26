@@ -9,14 +9,14 @@
   },
   "version": "1.0.0",
   "updater": {
-    "type": "github",
-    "id": "ShadiestGoat/replugged-deadname-fixer"
+    "type": "store",
+    "id": "eu.shadygoat.DeadnameFixer"
   },
   "license": "MIT",
   "type": "replugged-plugin",
   "renderer": "src/index.ts",
   "source": "https://github.com/ShadiestGoat/replugged-deadname-fixer",
   "image": [
-    "https://cdn.discordapp.com/attachments/735886276070342696/1164412779931897866/QznwHsj.png"
+    "https://i.imgur.com/IHUBxXD.png"
   ]
 }

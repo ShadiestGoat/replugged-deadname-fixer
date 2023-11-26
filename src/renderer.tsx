@@ -13,7 +13,7 @@ export const deadnameRule: ParserRule & ReactOutputRule = {
       return null;
     }
 
-    const reg = new RegExp(`^.*(?<!\\w)(${deadnames.join("|")})(?!\\w)`, "ims");
+    const reg = new RegExp(`^.*(?<!\\w)(${deadnames.sort((a, b) => b.length - a.length).join("|")})(?!\\w)`, "ims");
     return reg.exec(source);
   },
   parse(capture, parse, state) {
@@ -53,10 +53,8 @@ export const deadnameRule: ParserRule & ReactOutputRule = {
       }
     }
 
-    return (
-      <Tooltip text={content}>
-        <span className="md-deadname">{realName}</span>
-      </Tooltip>
-    );
+    const inner = <span className="md-deadname">{realName}</span>;
+
+    return cfg.get("enableTooltip") ? <Tooltip text={content}>{inner}</Tooltip> : inner;
   },
 };
