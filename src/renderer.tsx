@@ -13,7 +13,10 @@ export const deadnameRule: ParserRule & ReactOutputRule = {
       return null;
     }
 
-    const reg = new RegExp(`^.*(?<!\\w)(${deadnames.sort((a, b) => b.length - a.length).join("|")})(?!\\w)`, "ims");
+    const reg = new RegExp(
+      `^.*(?<!\\w)(${deadnames.sort((a, b) => b.length - a.length).join("|")})(?!\\w)`,
+      "ims",
+    );
     return reg.exec(source);
   },
   parse(capture, parse, state) {
