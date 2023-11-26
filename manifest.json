@@ -16,5 +16,7 @@
   "type": "replugged-plugin",
   "renderer": "src/index.ts",
   "source": "https://github.com/ShadiestGoat/replugged-deadname-fixer",
-  "image": ["https://cdn.discordapp.com/attachments/735886276070342696/1164412779931897866/QznwHsj.png"]
+  "image": [
+    "https://cdn.discordapp.com/attachments/735886276070342696/1164412779931897866/QznwHsj.png"
+  ]
 }
